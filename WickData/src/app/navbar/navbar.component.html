@@ -1,0 +1,25 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-dark green" [containerInside]="false">
+    <mdb-navbar-brand>
+        <a class="navbar-brand" routerLink="">WickData <span>by LigmaCorp</span></a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav">
+            <li routerLink="" routerLinkActive="nav-item active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link waves-light" mdbWavesEffect>Home</a>
+            </li>
+            <li routerLink="weather/oneday" [ngClass]="{'nav-item active': sevenDayActive.isActive || oneDayActive.isActive}">
+                <a class="nav-link waves-light" mdbWavesEffect>Weather</a>
+            </li>
+            <li routerLink="about" routerLinkActive="nav-item active"> 
+                <a class="nav-link waves-light" mdbWavesEffect>Info</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link waves-light" href='https://github.com/Peroshki' mdbWavesEffect><i class="fa fa-github"></i></a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
+<a routerLink="weather/sevenday" routerLinkActive #sevenDayActive="routerLinkActive" style="display: none"></a>
+<a routerLink="weather/oneday" routerLinkActive #oneDayActive="routerLinkActive" style="display: none"></a>

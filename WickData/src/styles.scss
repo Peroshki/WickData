@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+.weatherRangeButtons{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+div[id=formDiv]{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    form{
+        display: inline;
+        float: none;
+
+        input[type=text]{
+            &#cityInput{
+                padding-bottom: 1px;
+                height: 29px;
+            }
+
+            color: gray;
+            font-size: 18px;
+        }
+    }
+}
+
+div[id=graphDiv]{
+    text-align: center;
+}
+
+p[id=noData]{
+    text-align: center;
+}
+
+p[id=yesData]{
+    text-align: right;
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+
+    span{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+    }
+
+    img{
+        max-width: 20px;
+        height: auto;
+        padding-bottom: 5px;
+    }
+}

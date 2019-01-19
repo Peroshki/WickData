@@ -1,0 +1,29 @@
+mdb-navbar {
+    mdb-navbar-brand{
+        a {
+            font-size: 30px;
+
+            span {
+                font-size: 11px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    links {
+        ul {
+            &.nav-flex-icons{
+                margin-left:auto; 
+                margin-right:0;
+            }
+
+            li {
+                padding-right: 10px;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}

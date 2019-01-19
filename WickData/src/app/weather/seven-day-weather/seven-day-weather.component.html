@@ -1,0 +1,16 @@
+<div id='formDiv'>
+  <form class="form-inline md-form mr-auto mb-4">
+    <input class="form-control mr-sm-2" id="cityInput" [(ngModel)]="cityName" [ngModelOptions]="{standalone: true}"
+      type="text" placeholder="Enter a city name:">
+    <input bsDatepicker class="form control mr-sm-2" id="dateInput" [(ngModel)]="datePicked" [ngModelOptions]="{standalone: true}"
+      type="text" placeholder="mm/dd/yyyy">
+    <button mdbBtn size="sm" color="green" outline="true" class="my-0 waves-light" type="submit" (click)="searchClicked()">Search</button>
+  </form>
+</div>
+<div class='weatherRangeButtons'>
+  <button mdbBtn size="sm" outline="true" color="green" class="my-0 waves-light" type="submit" routerLink="/weather/oneday">1D</button>
+  <button mdbBtn mdbWavesEffect size="sm" color="green" class="my-0 waves-light" type="submit">7D</button>
+</div>
+<div id='graphDiv' [hidden]="!hasData"></div>
+<p id="yesData" *ngIf="graphExists">Data provided by the <img src="https://www.metaweather.com/static/img/weather/lc.svg"><span> MetaWeather </span>API</p>
+<p id="noData" [hidden]="hasData">No data!</p>

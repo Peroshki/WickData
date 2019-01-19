@@ -27,6 +27,10 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "/assets"
+              },
+              { "glob": "data.json", 
+                "input": "./", 
+                "output": "./assets/" 
               }
             ],
             "styles": [
@@ -41,6 +45,9 @@
               },
               {
                 "input": "src/styles.scss"
+              },
+              {
+                "input": "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"
               }
             ],
             "scripts": [
