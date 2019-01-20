@@ -1,4 +1,7 @@
-# MdbAngularFree
+# WickData
+WickData is a web platform which allows you to analyze trends in volatile data sets using candlestick charts.
+
+## MdbAngularFree
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0-rc.5 using the AngularMDB Boostrap.
 
