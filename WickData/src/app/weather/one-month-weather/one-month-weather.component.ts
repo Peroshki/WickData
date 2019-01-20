@@ -6,11 +6,11 @@ import { mergeMap } from 'rxjs/operators';
 declare var Plotly: any;
 
 @Component({
-  selector: 'app-seven-day-weather',
-  templateUrl: './seven-day-weather.component.html',
-  styleUrls: ['./seven-day-weather.component.scss']
+  selector: 'app-one-month-weather',
+  templateUrl: './one-month-weather.component.html',
+  styleUrls: ['./one-month-weather.component.scss']
 })
-export class SevenDayWeatherComponent implements OnInit {
+export class OneMonthWeatherComponent implements OnInit {
 
   // ngModel variables for input fields
   cityName: string;
@@ -38,14 +38,15 @@ export class SevenDayWeatherComponent implements OnInit {
 
   hasData: boolean = true;
   graphExists: boolean;
+  dateCounter: number;
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
-      this.data.getAirlineData().subscribe(data => {
-        console.log(data);
-      })
-   }
+    this.data.getAirlineData().subscribe(data => {
+      console.log(data);
+    })
+  }
 
   // TitleCases a string using the Array.prototype.map() and String.prototype.replace() methods
   titleCase(str) {
@@ -84,6 +85,24 @@ export class SevenDayWeatherComponent implements OnInit {
       return;
     }
 
+    for(var i = 0; i < this.minTemps.length; i++) {
+      var tempMin = this.minTemps[i];
+      var tempMax = this.maxTemps[i];
+      var tempOpen = this.openTemps[i];
+      var tempClose = this.closeTemps[i];
+
+      if(tempOpen < tempClose) {
+        if(tempMax < tempClose) {
+          this.maxTemps[i] = tempClose * 1.05;
+        }
+      } else if(tempClose < tempOpen) {
+        if(tempMin > tempClose) {
+          this.minTemps[i] = tempClose * 0.95
+        }
+      }
+      console.log(tempMax);
+    }
+
     // Make the graph using the Plotly command and style it appropriately
     let data = [{
       x: this.dates,
@@ -108,7 +127,9 @@ export class SevenDayWeatherComponent implements OnInit {
     let layout = {
       dragmode: 'zoom',
       showlegend: false,
-      title: 'Weather data for ' + this.titleCase(this.cityName) + ' from ' + this.weatherData[0].applicable_date + ' to ' + this.newQuery.replace(new RegExp('/', 'g'), '-'),
+      title: 'Weather data for ' + this.titleCase(this.cityName) + ' from ' + this.datePicked.toDateString().substr(11, 4)
+      + '-' + (this.datePicked.getMonth() + 1).toString()
+      + '-' + this.datePicked.toDateString().substr(8, 2) + ' to ' + this.newQuery.replace(new RegExp('/', 'g'), '-'),
 
       modebar: {
         orientation: "v"
@@ -143,16 +164,21 @@ export class SevenDayWeatherComponent implements OnInit {
   }
 
   formatData(date: string) {
+    if(this.dateCounter >= 32) {
+      // Make the graph
+      this.makeGraph();
+      return;
+    }
     // Loop through each element in the JSON array and grab the weather data for the specified date
     this.data.getWOEID(this.cityName).pipe(
       mergeMap(newData => this.data.getTodaysWeatherData(newData[0].woeid, date))
 
     ).subscribe(data => {
+      let count = 0;
       this.weatherData = data;
 
-      let dateCounter = 1;
-      this.maxTemps[dateCounter - 1] = 0;
-      this.minTemps[dateCounter - 1] = 100;
+      this.maxTemps[this.dateCounter - 1] = 0;
+      this.minTemps[this.dateCounter - 1] = 100;
 
       let closeTempSet = false;
       let currentDate = this.weatherData[0].created.substr(0, 10);
@@ -164,69 +190,63 @@ export class SevenDayWeatherComponent implements OnInit {
           this.openTemps.push(this.dayTemps.pop());
           this.dayTemps = [];
 
-          if(dateCounter > 7) {
-            return;
+          if(count > 7) {
+            
           } else {
             this.dates.push(currentDate);
-            this.maxTemps[dateCounter] = 0;
-            this.minTemps[dateCounter] = 100;
+            this.maxTemps[this.dateCounter] = 0;
+            this.minTemps[this.dateCounter] = 100;
           }
 
           currentDate = newDate;
-          dateCounter++;
+          this.dateCounter++;
+          count++;
 
           closeTempSet = false;
         }
 
         if(closeTempSet == false) {
+          if(this.closeTemps.includes(element.the_temp)){
+            return;
+          }
           this.closeTemps.push(element.the_temp);
           closeTempSet = true;
         }
 
-        if(dateCounter == 8) {
+        if(count == 8) {
           this.newQuery = element.created.substr(0, 10).replace(new RegExp('-', 'g'), '/');
-        } else if(dateCounter > 7) {
+        } else if(count > 7) {
           return;
         } else {
-          if(element.the_temp < this.minTemps[dateCounter - 1]) {
-            this.minTemps[dateCounter - 1] = element.the_temp;
+          if(element.the_temp < this.minTemps[this.dateCounter - 1]) {
+            this.minTemps[this.dateCounter - 1] = element.the_temp;
           }
   
-          if(element.the_temp > this.maxTemps[dateCounter - 1]) {
-            this.maxTemps[dateCounter - 1] = element.the_temp;
+          if(element.the_temp > this.maxTemps[this.dateCounter - 1]) {
+            this.maxTemps[this.dateCounter - 1] = element.the_temp;
           }
 
           this.dayTemps.push(element.the_temp);
         }
       })
 
-      while(this.closeTemps.length > 7) {
-        this.closeTemps.pop();
-      }
+      // while(this.closeTemps.length > 7) {
+      //   this.closeTemps.pop();
+      // }
 
-      while(this.openTemps.length > 7) {
-        this.openTemps.pop();
-      }
+      // while(this.openTemps.length > 7) {
+      //   this.openTemps.pop();
+      // }
 
-      while(this.maxTemps.length > 7) {
-        this.maxTemps.pop();
-      }
+      // while(this.maxTemps.length > 7) {
+      //   this.maxTemps.pop();
+      // }
 
-      while(this.minTemps.length > 7) {
-        this.minTemps.pop();
-      }
+      // while(this.minTemps.length > 7) {
+      //   this.minTemps.pop();
+      // }
 
-      console.log(this.newQuery);
-      
-      this.data.getWOEID(this.cityName).pipe(
-        mergeMap(newData => this.data.getTodaysWeatherData(newData[0].woeid, this.newQuery))
-  
-      ).subscribe(data => {
-        console.log(data);
-      })
-
-      // Make the graph
-      this.makeGraph();
+      this.formatData(this.newQuery);
     });
   }
 
@@ -248,6 +268,8 @@ export class SevenDayWeatherComponent implements OnInit {
     } else {
       this.formatDates();
     }
+
+    this.dateCounter = 1;
 
     this.formatData(this.weatherDate);
   }

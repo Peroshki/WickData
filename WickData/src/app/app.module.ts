@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SingleDayWeatherComponent } from './weather/single-day-weather/single-day-weather.component';
 import { SevenDayWeatherComponent } from './weather/seven-day-weather/seven-day-weather.component';
+import { OneMonthWeatherComponent } from './weather/one-month-weather/one-month-weather.component';
+import { FlightComponent } from './flight/flight.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SevenDayWeatherComponent } from './weather/seven-day-weather/seven-day-
     HomeComponent,
     AboutComponent,
     SingleDayWeatherComponent,
-    SevenDayWeatherComponent
+    SevenDayWeatherComponent,
+    FlightComponent,
+    OneMonthWeatherComponent
   ],
   imports: [
     BrowserModule,

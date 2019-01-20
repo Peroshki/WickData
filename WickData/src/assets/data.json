@@ -1,8 +1,600 @@
 [
     {
-        "Title": "stuff"
+      "Year": 1995,
+      "Quarter": 1,
+      "CurrentAverage": 296.9,
+      "InflationAverage": 494.88,
+      "MinimumforYear": 287.78,
+      "MaximumforYear": 296.9
     },
     {
-        "Title": "more"
+      "Year": 1995,
+      "Quarter": 2,
+      "CurrentAverage": 296.8,
+      "InflationAverage": 490.39
+    },
+    {
+      "Year": 1995,
+      "Quarter": 3,
+      "CurrentAverage": 292.19,
+      "InflationAverage": 480.67
+    },
+    {
+      "Year": 1995,
+      "Quarter": 4,
+      "CurrentAverage": 287.78,
+      "InflationAverage": 471.15
+    },
+    {
+      "Year": 1996,
+      "Quarter": 1,
+      "CurrentAverage": 283.97,
+      "InflationAverage": 460.72,
+      "MinimumforYear": 275.78,
+      "MaximumforYear": 283.97
+    },
+    {
+      "Year": 1996,
+      "Quarter": 2,
+      "CurrentAverage": 275.78,
+      "InflationAverage": 443.04
+    },
+    {
+      "Year": 1996,
+      "Quarter": 3,
+      "CurrentAverage": 276.63,
+      "InflationAverage": 442.06
+    },
+    {
+      "Year": 1996,
+      "Quarter": 4,
+      "CurrentAverage": 278.33,
+      "InflationAverage": 441.59
+    },
+    {
+      "Year": 1997,
+      "Quarter": 1,
+      "CurrentAverage": 283.4,
+      "InflationAverage": 446.64,
+      "MinimumforYear": 283.4,
+      "MaximumforYear": 293.51
+    },
+    {
+      "Year": 1997,
+      "Quarter": 2,
+      "CurrentAverage": 289.44,
+      "InflationAverage": 454.34
+    },
+    {
+      "Year": 1997,
+      "Quarter": 3,
+      "CurrentAverage": 287.22,
+      "InflationAverage": 449.09
+    },
+    {
+      "Year": 1997,
+      "Quarter": 4,
+      "CurrentAverage": 293.51,
+      "InflationAverage": 457.13
+    },
+    {
+      "Year": 1998,
+      "Quarter": 1,
+      "CurrentAverage": 304.74,
+      "InflationAverage": 473.35,
+      "MinimumforYear": 300.97,
+      "MaximumforYear": 316.18
+    },
+    {
+      "Year": 1998,
+      "Quarter": 2,
+      "CurrentAverage": 300.97,
+      "InflationAverage": 465
+    },
+    {
+      "Year": 1998,
+      "Quarter": 3,
+      "CurrentAverage": 309.17,
+      "InflationAverage": 475.82
+    },
+    {
+      "Year": 1998,
+      "Quarter": 4,
+      "CurrentAverage": 316.18,
+      "InflationAverage": 484.92
+    },
+    {
+      "Year": 1999,
+      "Quarter": 1,
+      "CurrentAverage": 331.74,
+      "InflationAverage": 506.83,
+      "MinimumforYear": 317.93,
+      "MaximumforYear": 331.74
+    },
+    {
+      "Year": 1999,
+      "Quarter": 2,
+      "CurrentAverage": 329.34,
+      "InflationAverage": 498.31
+    },
+    {
+      "Year": 1999,
+      "Quarter": 3,
+      "CurrentAverage": 323.83,
+      "InflationAverage": 486.95
+    },
+    {
+      "Year": 1999,
+      "Quarter": 4,
+      "CurrentAverage": 317.93,
+      "InflationAverage": 475.15
+    },
+    {
+      "Year": 2000,
+      "Quarter": 1,
+      "CurrentAverage": 340.23,
+      "InflationAverage": 503.48,
+      "MinimumforYear": 339,
+      "MaximumforYear": 340.23
+    },
+    {
+      "Year": 2000,
+      "Quarter": 2,
+      "CurrentAverage": 339.16,
+      "InflationAverage": 496.65
+    },
+    {
+      "Year": 2000,
+      "Quarter": 3,
+      "CurrentAverage": 339,
+      "InflationAverage": 492.48
+    },
+    {
+      "Year": 2000,
+      "Quarter": 4,
+      "CurrentAverage": 340.08,
+      "InflationAverage": 491.4
+    },
+    {
+      "Year": 2001,
+      "Quarter": 1,
+      "CurrentAverage": 347.69,
+      "InflationAverage": 497.63,
+      "MinimumforYear": 299.81,
+      "MaximumforYear": 347.69
+    },
+    {
+      "Year": 2001,
+      "Quarter": 2,
+      "CurrentAverage": 328.67,
+      "InflationAverage": 465.56
+    },
+    {
+      "Year": 2001,
+      "Quarter": 3,
+      "CurrentAverage": 320.62,
+      "InflationAverage": 453.57
+    },
+    {
+      "Year": 2001,
+      "Quarter": 4,
+      "CurrentAverage": 299.81,
+      "InflationAverage": 425.31
+    },
+    {
+      "Year": 2002,
+      "Quarter": 1,
+      "CurrentAverage": 320.02,
+      "InflationAverage": 452.37,
+      "MinimumforYear": 308.85,
+      "MaximumforYear":  320.02
+    },
+    {
+      "Year": 2002,
+      "Quarter": 2,
+      "CurrentAverage": 317.93,
+      "InflationAverage": 444.58
+    },
+    {
+      "Year": 2002,
+      "Quarter": 3,
+      "CurrentAverage": 312.33,
+      "InflationAverage": 434.9
+    },
+    {
+      "Year": 2002,
+      "Quarter": 4,
+      "CurrentAverage": 308.85,
+      "InflationAverage": 428.71
+    },
+    {
+      "Year": 2003,
+      "Quarter": 1,
+      "CurrentAverage": 319.19,
+      "InflationAverage": 438.62,
+      "MinimumforYear": 314.52,
+      "MaximumforYear": 319.19
+    },
+    {
+      "Year": 2003,
+      "Quarter": 2,
+      "CurrentAverage": 314.52,
+      "InflationAverage": 430.64
+    },
+    {
+      "Year": 2003,
+      "Quarter": 3,
+      "CurrentAverage": 315.36,
+      "InflationAverage": 429.68
+    },
+    {
+      "Year": 2003,
+      "Quarter": 4,
+      "CurrentAverage": 315.77,
+      "InflationAverage": 430.17
+    },
+    {
+      "Year": 2004,
+      "Quarter": 1,
+      "CurrentAverage": 320.23,
+      "InflationAverage": 432.34,
+      "MinimumforYear": 297.28,
+      "MaximumforYear": 320.23
+    },
+    {
+      "Year": 2004,
+      "Quarter": 2,
+      "CurrentAverage": 309.45,
+      "InflationAverage": 411.88
+    },
+    {
+      "Year": 2004,
+      "Quarter": 3,
+      "CurrentAverage": 305.41,
+      "InflationAverage": 405.08
+    },
+    {
+      "Year": 2004,
+      "Quarter": 4,
+      "CurrentAverage": 297.28,
+      "InflationAverage": 391.95
+    },
+    {
+      "Year": 2005,
+      "Quarter": 1,
+      "CurrentAverage": 301.39,
+      "InflationAverage": 394.88,
+      "MinimumforYear": 301.39,
+      "MaximumforYear": 314.76
+    },
+    {
+      "Year": 2005,
+      "Quarter": 2,
+      "CurrentAverage": 306.68,
+      "InflationAverage": 396.52
+    },
+    {
+      "Year": 2005,
+      "Quarter": 3,
+      "CurrentAverage": 307.31,
+      "InflationAverage": 392.55
+    },
+    {
+      "Year": 2005,
+      "Quarter": 4,
+      "CurrentAverage": 314.76,
+      "InflationAverage": 400.04
+    },
+    {
+      "Year": 2006,
+      "Quarter": 1,
+      "CurrentAverage": 323.34,
+      "InflationAverage": 408.73,
+      "MinimumforYear": 318.16,
+      "MaximumforYear": 341.58
+    },
+    {
+      "Year": 2006,
+      "Quarter": 2,
+      "CurrentAverage": 341.58,
+      "InflationAverage": 424.61
+    },
+    {
+      "Year": 2006,
+      "Quarter": 3,
+      "CurrentAverage": 328.55,
+      "InflationAverage": 406.13
+    },
+    {
+      "Year": 2006,
+      "Quarter": 4,
+      "CurrentAverage": 318.16,
+      "InflationAverage": 396.67
+    },
+    {
+      "Year": 2007,
+      "Quarter": 1,
+      "CurrentAverage": 317.84,
+      "InflationAverage": 392.17,
+      "MinimumforYear": 317.84,
+      "MaximumforYear": 329.77
+    },
+    {
+      "Year": 2007,
+      "Quarter": 2,
+      "CurrentAverage": 325.39,
+      "InflationAverage": 394.03
+    },
+    {
+      "Year": 2007,
+      "Quarter": 3,
+      "CurrentAverage": 325.26,
+      "InflationAverage": 392.8
+    },
+    {
+      "Year": 2007,
+      "Quarter": 4,
+      "CurrentAverage": 329.77,
+      "InflationAverage": 395.43
+    },
+    {
+      "Year": 2008,
+      "Quarter": 1,
+      "CurrentAverage": 333.29,
+      "InflationAverage": 395.17,
+      "MinimumforYear": 333.29,
+      "MaximumforYear": 346.99
+    },
+    {
+      "Year": 2008,
+      "Quarter": 2,
+      "CurrentAverage": 346.99,
+      "InflationAverage": 402.57
+    },
+    {
+      "Year": 2008,
+      "Quarter": 3,
+      "CurrentAverage": 346.38,
+      "InflationAverage": 397.24
+    },
+    {
+      "Year": 2008,
+      "Quarter": 4,
+      "CurrentAverage": 345.42,
+      "InflationAverage": 407.67
+    },
+    {
+      "Year": 2009,
+      "Quarter": 1,
+      "CurrentAverage": 313.82,
+      "InflationAverage": 372.22,
+      "MinimumforYear": 301.82,
+      "MaximumforYear": 319.85
+    },
+    {
+      "Year": 2009,
+      "Quarter": 2,
+      "CurrentAverage": 301.82,
+      "InflationAverage": 354.24
+    },
+    {
+      "Year": 2009,
+      "Quarter": 3,
+      "CurrentAverage": 310.35,
+      "InflationAverage": 361.79
+    },
+    {
+      "Year": 2009,
+      "Quarter": 4,
+      "CurrentAverage": 319.85,
+      "InflationAverage": 372.12
+    },
+    {
+      "Year": 2010,
+      "Quarter": 1,
+      "CurrentAverage": 328.12,
+      "InflationAverage": 380.21,
+      "MinimumforYear": 328.12,
+      "MaximumforYear": 340.72
+    },
+    {
+      "Year": 2010,
+      "Quarter": 2,
+      "CurrentAverage": 340.72,
+      "InflationAverage": 392.95
+    },
+    {
+      "Year": 2010,
+      "Quarter": 3,
+      "CurrentAverage": 336.09,
+      "InflationAverage": 387.25
+    },
+    {
+      "Year": 2010,
+      "Quarter": 4,
+      "CurrentAverage": 334.78,
+      "InflationAverage": 384.6
+    },
+    {
+      "Year": 2011,
+      "Quarter": 1,
+      "CurrentAverage": 355.72,
+      "InflationAverage": 403.55,
+      "MinimumforYear": 355.72,
+      "MaximumforYear": 369.68
+    },
+    {
+      "Year": 2011,
+      "Quarter": 2,
+      "CurrentAverage": 369.68,
+      "InflationAverage": 412.2
+    },
+    {
+      "Year": 2011,
+      "Quarter": 3,
+      "CurrentAverage": 363.85,
+      "InflationAverage": 404.06
+    },
+    {
+      "Year": 2011,
+      "Quarter": 4,
+      "CurrentAverage": 368.39,
+      "InflationAverage": 409.71
+    },
+    {
+      "Year": 2012,
+      "Quarter": 1,
+      "CurrentAverage": 372.83,
+      "InflationAverage": 409.33,
+      "MinimumforYear": 372.83,
+      "MaximumforYear": 374.77
+    },
+    {
+      "Year": 2012,
+      "Quarter": 2,
+      "CurrentAverage": 384.67,
+      "InflationAverage": 421.56
+    },
+    {
+      "Year": 2012,
+      "Quarter": 3,
+      "CurrentAverage": 374.77,
+      "InflationAverage": 407.93
+    },
+    {
+      "Year": 2012,
+      "Quarter": 4,
+      "CurrentAverage": 374.23,
+      "InflationAverage": 408.5
+    },
+    {
+      "Year": 2013,
+      "Quarter": 1,
+      "CurrentAverage": 377.93,
+      "InflationAverage": 410.12,
+      "MinimumforYear": 377.93,
+      "MaximumforYear": 382.04
+    },
+    {
+      "Year": 2013,
+      "Quarter": 2,
+      "CurrentAverage": 378,
+      "InflationAverage": 407.98
+    },
+    {
+      "Year": 2013,
+      "Quarter": 3,
+      "CurrentAverage": 382,
+      "InflationAverage": 410.75
+    },
+    {
+      "Year": 2013,
+      "Quarter": 4,
+      "CurrentAverage": 382.04,
+      "InflationAverage": 411.95
+    },
+    {
+      "Year": 2014,
+      "Quarter": 1,
+      "CurrentAverage": 382.15,
+      "InflationAverage": 408.95,
+      "MinimumforYear": 382.15,
+      "MaximumforYear": 392.66
+    },
+    {
+      "Year": 2014,
+      "Quarter": 2,
+      "CurrentAverage": 395.62,
+      "InflationAverage": 418.42
+    },
+    {
+      "Year": 2014,
+      "Quarter": 3,
+      "CurrentAverage": 391.7,
+      "InflationAverage": 413.8
+    },
+    {
+      "Year": 2014,
+      "Quarter": 4,
+      "CurrentAverage": 392.66,
+      "InflationAverage": 418.18
+    },
+    {
+      "Year": 2015,
+      "Quarter": 1,
+      "CurrentAverage": 388.32,
+      "InflationAverage": 415.81,
+      "MinimumforYear": 362.56,
+      "MaximumforYear": 388.32
+    },
+    {
+      "Year": 2015,
+      "Quarter": 2,
+      "CurrentAverage": 385.91,
+      "InflationAverage": 408.31
+    },
+    {
+      "Year": 2015,
+      "Quarter": 3,
+      "CurrentAverage": 371.72,
+      "InflationAverage": 392.26
+    },
+    {
+      "Year": 2015,
+      "Quarter": 4,
+      "CurrentAverage": 362.56,
+      "InflationAverage": 384.33
+    },
+    {
+      "Year": 2016,
+      "Quarter": 1,
+      "CurrentAverage": 361.2,
+      "InflationAverage": 382.63,
+      "MinimumforYear": 343.98,
+      "MaximumforYear": 361.2
+    },
+    {
+      "Year": 2016,
+      "Quarter": 2,
+      "CurrentAverage": 350.66,
+      "InflationAverage": 367.17
+    },
+    {
+      "Year": 2016,
+      "Quarter": 3,
+      "CurrentAverage": 343.98,
+      "InflationAverage": 358.98
+    },
+    {
+      "Year": 2016,
+      "Quarter": 4,
+      "CurrentAverage": 346.72,
+      "InflationAverage": 361.03
+    },
+    {
+      "Year": 2017,
+      "Quarter": 1,
+      "CurrentAverage": 351.85,
+      "InflationAverage": 363.5,
+      "MinimumforYear": 335.83,
+      "MaximumforYear": 355.91
+    },
+    {
+      "Year": 2017,
+      "Quarter": 2,
+      "CurrentAverage": 355.91,
+      "InflationAverage": 365.71
+    },
+    {
+      "Year": 2017,
+      "Quarter": 3,
+      "CurrentAverage": 335.83,
+      "InflationAverage": 343.71
+    },
+    {
+      "Year": 2017,
+      "Quarter": 4,
+      "CurrentAverage": 347.33,
+      "InflationAverage": 354.17
     }
-]
+   ]

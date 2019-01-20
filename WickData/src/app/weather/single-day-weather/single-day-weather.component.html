@@ -8,8 +8,9 @@
   </form>
 </div>
 <div class='weatherRangeButtons'>
-  <button mdbBtn mdbWavesEffect size="sm" color="green" class="my-0 waves-light" type="submit">1D</button>
-  <button mdbBtn size="sm" color="green" outline="true" class="my-0 waves-light" type="submit" routerLink="/weather/sevenday">7D</button>
+  <button mdbBtn mdbWavesEffect size="sm" color="green" class="my-0 waves-light" type="submit">Today</button>
+  <button mdbBtn size="sm" color="green" outline="true" class="my-0 waves-light" type="submit" routerLink="/weather/sevenday">Weekly</button>
+  <button mdbBtn size="sm" color="green" outline="true" class="my-0 waves-light" type="submit" routerLink="/weather/onemonth">Monthly</button>
 </div>
 <div id='graphDiv' [hidden]="!hasData"></div>
 <p id="yesData" *ngIf="graphExists">Data provided by the <img src="https://www.metaweather.com/static/img/weather/lc.svg"><span> MetaWeather </span>API</p>

@@ -8,9 +8,16 @@ mdb-navbar {
                 padding-right: 15px;
             }
         }
+
+        img {
+            height: 5%;
+            width: 5%;
+        }
     }
 
     links {
+        padding-left: 9.5%;
+
         ul {
             &.nav-flex-icons{
                 margin-left:auto; 
