@@ -8,7 +8,7 @@ Run `npm install` after cloning this repository to install all of the necessary 
 ## Screenshots
 
 <p align="center">
-  Home page:
+  <strong>Home page:</strong>
 </p>
 
 ![Home](Screenshots/Home.png)
@@ -21,13 +21,13 @@ Run `npm install` after cloning this repository to install all of the necessary 
 ![Weather Monthly](Screenshots/weathermonthly.png)
 
 <p align="center">
-  Airline prices: 
+  <strong>Airline prices:</strong> 
 </p>
 
 ![Airlines](Screenshots/flight.png)
 
 <p align="center">
-  Information:
+  <strong>Information:</strong>
 </p>
 
 ![Info](Screenshots/info.png)
