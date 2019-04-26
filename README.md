@@ -14,7 +14,7 @@ Run `npm install` after cloning this repository to install all of the necessary 
 ![Home](Screenshots/Home.png)
 
 <p align="center">
-  Weather:
+  <strong>Weather:</strong>
 </p>
 
 ![Weather Weekly](Screenshots/weatherweekly.png)
